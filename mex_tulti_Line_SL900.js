@@ -689,7 +689,7 @@ client1.on('connect', function(err) {
               //------------------------------------------CheckWeigher----------------------------------------------
               /*----------------------------------------------------------------------------------EOL----------------------------------------------------------------------------------*/
                    if(secEOL>=60 && CntOutEOL){
-                      fs.appendFileSync("C:/PULSE/INTERBAKE_LOGS/mex_tul_eol_interbake.log","tt="+Date.now()+",var=EOL"+",val="+CntOutEOL+"\n");
+                      fs.appendFileSync("C:/PULSE/SL900_LOGS/mex_tul_eol_SL900.log","tt="+Date.now()+",var=EOL"+",val="+CntOutEOL+"\n");
                       secEOL=0;
                     }else{
                       secEOL++;
