@@ -229,8 +229,8 @@ client1.on('connect', function(err) {
   intId1 =
     setInterval(function(){
         client1.readHoldingRegisters(0, 16).then(function(resp) {
-          CntInFrezzer =  joinWord(resp.register[0], resp.register[1])+joinWord(resp.register[2], resp.register[3]);
-          CntRejFrezzer1 = joinWord(resp.register[4], resp.register[5])+joinWord(resp.register[6], resp.register[7]);
+          CntInFrezzer =  joinWord(resp.register[4], resp.register[5])+joinWord(resp.register[6], resp.register[7]);
+          CntRejFrezzer1 = joinWord(resp.register[0], resp.register[1])+joinWord(resp.register[2], resp.register[3]);
 
           //------------------------------------------Frezzer----------------------------------------------
                 Frezzerct = CntInFrezzer // NOTE: igualar al contador de salida
