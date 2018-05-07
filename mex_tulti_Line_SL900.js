@@ -285,7 +285,7 @@ client1.on('connect', function(err) {
                   for (var key in Frezzerresults) {
                     if( Frezzerresults[key] != null && ! isNaN(Frezzerresults[key]) )
                     //NOTE: Cambiar path
-                    fs.appendFileSync('C:/Pulse/SL900_LOGS/mex_tul_Frezzer_SL900.log', 'tt=' + Frezzertime + ',var=' + key + ',val=' + Frezzerresults[key] + '\n')
+                    fs.appendFileSync('C:/Pulse/SL900_LOGS/mex_tul_Tunnel_SL900.log', 'tt=' + Frezzertime + ',var=' + key + ',val=' + Frezzerresults[key] + '\n')
                   }
                   FrezzerflagPrint = 0
                   FrezzersecStop = 0
