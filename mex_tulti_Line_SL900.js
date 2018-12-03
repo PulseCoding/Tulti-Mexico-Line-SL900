@@ -306,8 +306,7 @@ client1.on('connect', function(err) {
     intId2 =
       setInterval(function(){
           client2.readHoldingRegisters(0, 16).then(function(resp) {
-            CntInColdStamper1 =  joinWord(resp.register[0], resp.register[1])+joinWord(resp.register[2], resp.register[3])+joinWord(resp.register[4], resp.register[5]);
-            CntInColdStamper = joinWord(resp.register[6], resp.register[7])+joinWord(resp.register[8], resp.register[9])+joinWord(resp.register[10], resp.register[11])+CntInColdStamper1;
+            CntInColdStamper = joinWord(resp.register[0], resp.register[1])+joinWord(resp.register[2], resp.register[3])+joinWord(resp.register[4], resp.register[5])+joinWord(resp.register[6], resp.register[7])+joinWord(resp.register[8], resp.register[9])+joinWord(resp.register[10], resp.register[11]);
 
             //------------------------------------------ColdStamper----------------------------------------------
                   ColdStamperct = CntInColdStamper // NOTE: igualar al contador de salida
